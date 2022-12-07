@@ -12,7 +12,7 @@ Route::get('/', function () {
     return redirect('home');
 });
 
-Route::get('/home', [ HomeController::class, 'index' ] )->name('about');
+Route::get('/home', [ HomeController::class, 'index' ] );
 Route::get('/about', [ AboutController::class, 'index' ]);
 Route::get('/products', [ ProductsController::class, 'index' ]);
 Route::get('/product/{id}', [ ProductsController::class, 'single' ]);
