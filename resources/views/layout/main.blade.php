@@ -14,5 +14,6 @@
 
     @yield('content')
 
+    <script src="{{ url('assets/js/functions.js') }}"></script>
 </body>
 </html>
